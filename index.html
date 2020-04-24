@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Suivi des dépenses</title>
+  </head>
+  <body>
+    <h2>Suivi des dépenses</h2>
+    <div class="container">
+      <h4>Votre solde</h4>
+      <h1 id="balance">0.00€</h1>
+
+      <div class="inc-exp-container">
+        <div>
+          <h4>Revenus</h4>
+          <p id="money-plus" class="money plus">+0.00€</p>
+        </div>
+        <div>
+          <h4>Dépenses</h4>
+          <p id="money-minus" class="money minus">-0.00€</p>
+        </div>
+      </div>
+
+      <h3>Historique</h3>
+      <ul id="list" class="list">
+        <li class="minus">
+          Cash<span>-400.00€</span><button class="delete-btn">X</button>
+        </li>
+      </ul>
+
+      <h3>Ajouter une transaction</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Nom</label
+          ><input type="text" id="text" placeholder="Ex: Loyer 03/2020" />
+        </div>
+        <div class="form-control">
+          <label for="amount"
+            >Montant <br />(+ pour revenus, - pour dépenses)</label
+          ><input type="text" id="amount" placeholder="Ex: +200 ou -300" />
+        </div>
+        <button class="btn">Ajouter</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
